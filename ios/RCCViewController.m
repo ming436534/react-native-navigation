@@ -3,12 +3,12 @@
 #import "RCCTabBarController.h"
 #import "RCCDrawerController.h"
 #import "RCCTheSideBarManagerViewController.h"
-#import "RCTRootView.h"
+#import <React/RCTRootView.h>
 #import "RCCManager.h"
-#import "RCTEventDispatcher.h"
-#import "RCTConvert.h"
+#import <React/RCTEventDispatcher.h>
+#import <React/RCTConvert.h>
 #import "RCCExternalViewControllerProtocol.h"
-#import "RCTHelpers.h"
+#import <React/RCTHelpers.h>
 #import "RCCTitleViewHelper.h"
 
 NSString* const RCCViewControllerCancelReactTouchesNotification = @"RCCViewControllerCancelReactTouchesNotification";
