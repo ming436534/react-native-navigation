@@ -8,8 +8,9 @@
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTConvert.h>
 #import "RCCExternalViewControllerProtocol.h"
-#import <React/RCTHelpers.h>
+#import "RCTHelpers.h"
 #import "RCCTitleViewHelper.h"
+#import "RCTBridge+Reload.h"
 
 NSString* const RCCViewControllerCancelReactTouchesNotification = @"RCCViewControllerCancelReactTouchesNotification";
 
@@ -145,7 +146,7 @@ const NSInteger TRANSPARENT_NAVBAR_TAG = 78264803;
     self.navigatorStyle = [NSMutableDictionary dictionaryWithDictionary:navigatorStyle];
     
     [self setStyleOnInit];
-    
+  
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onRNReload) name:RCTReloadNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCancelReactTouches) name:RCCViewControllerCancelReactTouchesNotification object:nil];
     
