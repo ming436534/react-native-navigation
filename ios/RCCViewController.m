@@ -9,26 +9,26 @@
 #import "RCCTitleViewHelper.h"
 #import "RCTBridge+Reload.h"
 
-#if __has_include("RCTRootView.h")
-#import "RCTRootView.h"
-#elif __has_include(<React/RCTRootView.h>)
+#if __has_include(<React/RCTRootView.h>)
 #import <React/RCTRootView.h>
+#elif __has_include("RCTRootView.h")
+#import "RCTRootView.h"
 #elif __has_include("React/RCTRootView.h")
 #import "React/RCTRootView.h"   // Required when used as a Pod in a Swift project
 #endif
 
-#if __has_include("RCTConvert.h")
-#import "RCTConvert.h"
-#elif __has_include(<React/RCTConvert.h>)
+#if __has_include(<React/RCTConvert.h>)
 #import <React/RCTConvert.h>
+#elif __has_include("RCTConvert.h")
+#import "RCTConvert.h"
 #elif __has_include("React/RCTConvert.h")
 #import "React/RCTConvert.h"   // Required when used as a Pod in a Swift project
 #endif
 
-#if __has_include("RCTEventDispatcher.h")
-#import "RCTEventDispatcher.h"
-#elif __has_include(<React/RCTEventDispatcher.h>)
+#if __has_include(<React/RCTEventDispatcher.h>)
 #import <React/RCTEventDispatcher.h>
+#elif __has_include("RCTEventDispatcher.h")
+#import "RCTEventDispatcher.h"
 #elif __has_include("React/RCTEventDispatcher.h")
 #import "React/RCTEventDispatcher.h"   // Required when used as a Pod in a Swift project
 #endif
